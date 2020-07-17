@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="573fd3ea-6f47-4a8c-80e3-da14a26a2e23" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="demo-project" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1aFqKVjvvc4a9AW9BNiz3yRcejj" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="play.paths.configuration" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.demo.gc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\demo-project\src\main\scala\com\demo\gc" />
+      <recent name="E:\demo-project\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SparkGroupTest">
+    <configuration name="LineCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.gc.LineCount" />
+      <module name="demo-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmallFileMerge" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.gc.SmallFileMerge" />
+      <module name="demo-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkGroupTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.gc.SparkGroupTest" />
+      <module name="demo-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableProperties" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.gc.TableProperties" />
+      <module name="demo-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test9" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.gc.Test9" />
+      <module name="demo-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.LineCount" />
+      <item itemvalue="Application.SparkGroupTest" />
+      <item itemvalue="Application.SmallFileMerge" />
+      <item itemvalue="Application.Test9" />
+      <item itemvalue="Application.TableProperties" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SparkGroupTest" />
+        <item itemvalue="Application.TableProperties" />
+        <item itemvalue="Application.LineCount" />
+        <item itemvalue="Application.Test9" />
+        <item itemvalue="Application.SmallFileMerge" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="573fd3ea-6f47-4a8c-80e3-da14a26a2e23" name="Default Changelist" comment="" />
+      <created>1586341625286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586341625286</updated>
+      <workItem from="1586341628269" duration="9598000" />
+      <workItem from="1586415274338" duration="775000" />
+      <workItem from="1586504341374" duration="21520000" />
+      <workItem from="1586828412909" duration="655000" />
+      <workItem from="1586829956015" duration="44251000" />
+      <workItem from="1587898971503" duration="37701000" />
+      <workItem from="1589341013353" duration="57478000" />
+      <workItem from="1591239726702" duration="593000" />
+      <workItem from="1591329276383" duration="3828000" />
+      <workItem from="1591926021832" duration="4552000" />
+      <workItem from="1592898004110" duration="18000" />
+      <workItem from="1593488616740" duration="8249000" />
+      <workItem from="1593739628092" duration="599000" />
+      <workItem from="1594106664331" duration="1224000" />
+      <workItem from="1594977058434" duration="1954000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.1/spark-core_2.11-2.1.1-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala</url>
+          <line>1039</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0-sources.jar!/org/apache/spark/sql/DataFrameReader.scala</url>
+          <line>237</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0-sources.jar!/org/apache/spark/sql/execution/datasources/jdbc/JDBCRelation.scala</url>
+          <line>94</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0-sources.jar!/org/apache/spark/sql/execution/datasources/jdbc/JDBCRelation.scala</url>
+          <line>122</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
