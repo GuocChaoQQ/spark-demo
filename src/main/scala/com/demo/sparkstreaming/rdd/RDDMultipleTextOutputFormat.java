@@ -1,4 +1,4 @@
-package com.demo.gc;
+package com.demo.sparkstreaming.rdd;
 
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.mapred.JobConf;
@@ -6,15 +6,15 @@ import org.apache.hadoop.mapred.RecordWriter;
 import org.apache.hadoop.mapred.lib.MultipleTextOutputFormat;
 import org.apache.hadoop.util.Progressable;
 
+import java.io.File;
 import java.io.IOException;
 
 public class RDDMultipleTextOutputFormat extends MultipleTextOutputFormat<String, String> {
     private AppendTextOutputFormat theTextOutputFormat = null;
     public String generateFileNameForKeyValue(String key, String value, String name) {
-        //输出格式 /ouput/key/key.csv
-        //key  2020-02-06   value:data  name:part-00000
-//      System.out.println(key + "/"+name);
-        return key + "/"+name;
+
+        String[] s = key.split("_"); // database_tablename
+        return s[0]+ File.separator+s[1] +File.separator+name; // database/tablename/
     }
     @Override
     protected RecordWriter getBaseRecordWriter(FileSystem fs, JobConf job, String name, Progressable progressable) throws IOException {

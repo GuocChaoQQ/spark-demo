@@ -13,6 +13,7 @@ def getSparkSession( appName:String,masterUrl:String):SparkSession ={
     .config("spark.some.config.option", "some-value")
     .config("spark.sql.adaptive.enabled","true")
     .config("spark.sql.shuffle.partitions","10")
+    .config("spark.default.parallelism","100")
     .enableHiveSupport().getOrCreate()
 }
 

@@ -1,4 +1,4 @@
-package com.demo.gc;
+package com.demo.sparkstreaming.rdd;
 
 import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileSystem;

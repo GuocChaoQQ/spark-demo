@@ -4,10 +4,11 @@ import java.{lang, util}
 
 import com.alibaba.fastjson
 import com.alibaba.fastjson.JSON
+import com.demo.sparkstreaming.rdd.RDDMultipleTextOutputFormat
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.TopicPartition
 import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.kudu.client.{ KuduClient, KuduPredicate, RowResultIterator}
+import org.apache.kudu.client.{KuduClient, KuduPredicate, RowResultIterator}
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
