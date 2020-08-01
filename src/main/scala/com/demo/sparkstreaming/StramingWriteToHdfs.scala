@@ -18,25 +18,45 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
  *
  **/
 object StramingWriteToHdfs {
-  val root_directory="/user/admin/sparkStreaming/"
-  var  hdfs_master="hdfs://10.83.0.47:8020";
+  var root_directory="/user/admin/sparkStreaming/"
+  var  hdfs_master:String="hdfs://10.83.0.47:8020";
+  var kuduMaster:String="node129:7051";
+  var deployMode:String="local"
+  var boker_list:String="10.83.0.47:9092";
+  var topic:String ="maxwellBinlogData"
+  var group_id:String="gc"
+  var mode:String="test"
 
   def main(args: Array[String]): Unit = {
+    // 处理请求参数
+    if(mode!="test"){
+      root_directory=args(0)
+      hdfs_master =args(1)
+      kuduMaster=args(2)
+      deployMode=args(3)
+      boker_list=args(4)
+      topic=args(5)
+      group_id=args(6)
+      mode=args(7)
+    }
+
     val sparkConf = new SparkConf().setAppName("StramingWriteToHdfs")
       .set("spark.streaming.backpressure.enabled", "true") // 开启被压
       .set("spark.streaming.kafka.maxRatePerPartition", "10") // 每秒 每个分区消费10条数据
       .set("spark.streaming.stopGracefullyOnShutdown", "true")
-        .setMaster("local[1]")
+      if(deployMode=="local"){
+        sparkConf.setMaster("local[*]")
+      }
      // 优雅关闭
     System.setProperty("HADOOP_USER_NAME", "admin")
     val param: Map[String, String] = Map[String, String] (
-      "boker_list" -> "10.83.0.47:9092",
-      "groupId" -> "gc",
-      "topic" -> "maxwellBinlogData",
+      "boker_list" -> boker_list,
+      "groupId" -> group_id,
+      "topic" -> topic,
       "kudu_table_name" -> "impala::default.kafka_offsit",
       "isAutoCommit" -> "false",
       "type" -> "earliest",
-      "kudu_master" -> "node129:7051"
+      "kudu_master" -> kuduMaster
     )
     val ssc = new StreamingContext(sparkConf,Seconds(3))
 
