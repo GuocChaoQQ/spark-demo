@@ -14,7 +14,12 @@ public class RDDMultipleTextOutputFormat extends MultipleTextOutputFormat<String
     public String generateFileNameForKeyValue(String key, String value, String name) {
 
         String[] s = key.split("_"); // database_tablename
-        return s[0]+ File.separator+s[1] +File.separator+name; // database/tablename/
+        if(s.length>=2){
+            return s[0]+ File.separator+s[1] +File.separator+name; // database/tablename/
+        }else{
+            return  s[0]+ File.separator+s[1] +name; // database/
+        }
+
     }
     @Override
     protected RecordWriter getBaseRecordWriter(FileSystem fs, JobConf job, String name, Progressable progressable) throws IOException {
