@@ -1,0 +1,34 @@
+drop table ods.data_watch;
+create table ods.data_watch (
+id int  not null comment '主键id',
+sql_rule String comment 'sql 规则',
+sql_rule_watch String comment '对比sql规则',
+job_name string  comment '校验描述',
+sql_rule_table_name String comment '校验表的表名',
+sql_rule_watch_table_name String comment '被参照的表的表名',
+watch_engine String comment '执行引擎 hive 或kudu ',
+watch_type String  comment '1 单表校验(单表校验请配置sql_rule 和sql_rule_table_name ) 2 双表检验',
+PRIMARY KEY(ID)
+)PARTITION BY HASH PARTITIONS 8
+COMMENT 'sql校验规则表'
+STORED AS KUDU;
+
+
+
+#！/bin/bash
+date=$1
+if [ ! $date ]
+then
+        date=`date -d "1 day ago" +%Y-%m-%d`
+fi;
+echo "当前批次时间:$date"
+
+spark-submit \
+ --class com.xxxx.spark.watch.DataWatch \
+ --master yarn \
+ --deploy-mode client \
+ --driver-memory 2g \
+ --executor-memory 2g \
+ --jars  hdfs:///user/admin/data_watch/mail-1.4.1.jar,hdfs:///user/admin/data_watch/kudu-spark2_2.11-1.10.0.jar \
+hdfs:///user/admin/data_watch/drawDatas-2.1.jar \
+hdfs:///user/admin/data_watch/email.properties $date node172:7051
